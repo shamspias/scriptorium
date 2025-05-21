@@ -13,7 +13,7 @@ class VideoDetectionApp:
 
     def __init__(self, master: tk.Tk):
         self.master = master
-        self.master.title("YOLOv8 Video Detection")
+        self.master.title("YOLO Video Detection")
         self.master.geometry("800x800")
         self.master.minsize(800, 800)
 
@@ -43,7 +43,7 @@ class VideoDetectionApp:
 
     def select_model(self) -> None:
         """Open file dialog to choose a .pt model."""
-        path = filedialog.askopenfilename(filetypes=[("YOLOv8 model (*.pt)", "*.pt")])
+        path = filedialog.askopenfilename(filetypes=[("YOLO model (*.pt)", "*.pt")])
         if path:
             self.model_path = path
             print(f"Model selected: {path}")
