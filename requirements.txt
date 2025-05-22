@@ -2,3 +2,4 @@ ultralytics
 streamlit
 yt-dlp
 opencv-python
+beautifulsoup4
